@@ -3,6 +3,7 @@ import { Container, SectionMultipleImages, Section,  Welcome } from "./styles"
 import { Header } from "../../components/Header"
 import { Button } from "../../components/Button"
 import { Footer } from "../../components/Footer"
+import { SectionTitleAndMultipleFields } from "../../components/SectionTitleAndMultipleFields"
 
 import groupImage from "../../assets/welcome/Group.png"
 import threePersons from "../../assets/three-persons.png"
@@ -38,13 +39,13 @@ export function Home() {
                 </div>
             </Welcome>
 
-            <SectionMultipleImages className="partners">
-                <div className="partners-text">
+            <SectionTitleAndMultipleFields className="partners">
+                <div className="text">
                     <h3>Partners</h3>
                     <h2>Lorem Ipsum Dolor</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div className="partners-wrapper">
+                <div className="wrapper">
                     <img src={google} alt="" />
                     <img src={microsoft} alt="" />
                     <img src={airbnb} alt="" />
@@ -52,7 +53,7 @@ export function Home() {
                     <img src={spotify} alt="" />
                 </div>
                 <Button />
-            </SectionMultipleImages>
+            </SectionTitleAndMultipleFields>
 
             <Section>
                 <img src={threePersons} alt="" />
@@ -72,39 +73,39 @@ export function Home() {
                 </div>
             </Section>
 
-            <SectionMultipleImages className="team">
-                <div className="partners-text">
+            <SectionTitleAndMultipleFields className="team">
+                <div className="text">
                     <h3>TEAMS</h3>
                     <h2>Our Talents</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur Suscipit nemo hic quos, ab,</p>
                 </div>
-                <div className="team-wrapper">
-                    <div className="team-member">
+                <div className="wrapper">
+                    <div className="member">
                         <img src={peg} alt="" />
                         <h3>Peg Legge</h3>
                         <p>CEO</p>
                     </div>
 
-                    <div className="team-member">
+                    <div className="member">
                         <img src={richard} alt="" />
                         <h3>Richard Guerra</h3>
                         <p>CTO</p>
                     </div>
 
-                    <div className="team-member">
+                    <div className="member">
                         <img src={alexandra} alt="" />
                         <h3>Alexandra Stolz</h3>
                         <p>DESIGNER</p>
                     </div>
 
-                    <div className="team-member">
+                    <div className="member">
                         <img src={janet} alt="" />
                         <h3>Janet Bray</h3>
                         <p>DEVELOPER</p>
                     </div>
                 </div>
                 <Button title="View Team"/>
-            </SectionMultipleImages>
+            </SectionTitleAndMultipleFields>
 
             <Footer />
 

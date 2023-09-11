@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 export const Container = styled.header`
     width: 100%;
+    background-color: ${ ({ theme }) => theme.COLORS.GREEN_100};
     .content {
         width: min(90%, 144rem);
         padding: 1.7rem 0;

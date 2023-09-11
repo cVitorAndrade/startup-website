@@ -1,6 +1,55 @@
 import { styled } from "styled-components";
 export const Container = styled.div`
     width: 100%;
+
+    .team {
+        .wrapper {
+            gap: 3.5rem;
+        }
+
+        .member {
+            -webkit-box-shadow: 8px 5px 13px 0px rgba(33,37,41,0.48);
+            -moz-box-shadow: 8px 5px 13px 0px rgba(33,37,41,0.48);
+            box-shadow: 3px 1px 13px 0px rgba(33,37,41,0.48);
+
+            padding: 2rem 2.5rem;
+            text-align: left;
+
+            img {
+                border-radius: 50%;
+                border: 1px solid ${ ({ theme }) => theme.COLORS.BLACK_100};
+            }
+
+            h3 {
+                font-family: 'Crimson Text', serif;
+                font-weight: 700;
+                font-size: 2.4rem;
+                line-height: 125%;
+                margin: 1.9rem 0 1.7rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 125%;
+                color: ${ ({ theme }) => theme.COLORS.BLACK_75};
+            }
+        }
+    }
+
+
+    @media(min-width: 660px) {
+        .partners .text {
+            h2 {
+                font-size: 4rem;
+            }
+        }
+
+        .team .wrapper {
+            gap: 4.7rem;
+        }
+    }
+
 `;
 
 export const Welcome = styled.div`
@@ -78,92 +127,6 @@ export const Welcome = styled.div`
     }
 `;
 
-export const SectionMultipleImages = styled.div`
-    text-align: center;
-    width: min(90%, 144rem);
-    margin: 2.2rem auto 3rem;
-
-    .partners-text h3 {
-        color: ${ ({ theme }) => theme.COLORS.GREEN_100};
-        font-size: 1.6rem;
-        font-weight: 700;
-        letter-spacing: 5px;
-        line-height: 125%;
-        text-transform: uppercase;
-    }
-
-    .partners-text {
-        max-width: 50rem;
-        margin: 0 auto 5.5rem;
-    }
-
-    .partners-text h2 {
-        font-family: 'Crimson Text', serif;
-        font-size: 2.4rem;
-        font-weight: 700;
-        line-height: 125%;
-        margin: 1.6rem 0;
-
-    }
-
-    .partners-text p {
-        font-size: 20px;
-        line-height: 125%;
-        font-weight: 400;
-    }
-
-    .partners-wrapper, .team-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 4rem;
-        margin-bottom: 5.5rem;
-    }
-
-    .team-wrapper {
-        gap: 3.5rem;
-    }
-
-    .team-member {
-        -webkit-box-shadow: 8px 5px 13px 0px rgba(33,37,41,0.48);
-        -moz-box-shadow: 8px 5px 13px 0px rgba(33,37,41,0.48);
-        box-shadow: 3px 1px 13px 0px rgba(33,37,41,0.48);
-
-        padding: 2rem 2.5rem;
-        text-align: left;
-
-        img {
-            border-radius: 50%;
-            border: 1px solid ${ ({ theme }) => theme.COLORS.BLACK_100};
-        }
-
-        h3 {
-            font-family: 'Crimson Text', serif;
-            font-weight: 700;
-            font-size: 2.4rem;
-            line-height: 125%;
-            margin: 1.9rem 0 1.7rem;
-        }
-
-        p {
-            font-size: 1.5rem;
-            font-weight: 400;
-            line-height: 125%;
-            color: ${ ({ theme }) => theme.COLORS.BLACK_75};
-        }
-    }
-
-
-    @media(min-width: 660px) {
-        .partners-text h2 {
-            font-size: 4rem;
-        }
-
-        .team-wrapper {
-            gap: 4.7rem;
-        }
-    }
-`;
 
 export const Section = styled.section`
     width: min(90%, 144rem);
