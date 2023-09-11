@@ -39,12 +39,6 @@ export const Container = styled.div`
 
 
     @media(min-width: 660px) {
-        .partners .text {
-            h2 {
-                font-size: 4rem;
-            }
-        }
-
         .team .wrapper {
             gap: 4.7rem;
         }
@@ -126,7 +120,6 @@ export const Welcome = styled.div`
         }
     }
 `;
-
 
 export const Section = styled.section`
     width: min(90%, 144rem);

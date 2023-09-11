@@ -40,4 +40,11 @@ export const Container = styled.div`
             font-weight: 400;
         }
     }
+    @media(min-width: 660px) {
+        .text {
+            h2 {
+                font-size: 4rem;
+            }
+        }
+    }
 `;

@@ -12,7 +12,7 @@ export function Header() {
                 <nav>
                     <VisitPage to="/">Home</VisitPage>
                     <VisitPage to="/portfolio">Portfolio</VisitPage>
-                    <VisitPage to="/">Services</VisitPage>
+                    <VisitPage to="/services">Services</VisitPage>
                     <VisitPage to="/">Contact</VisitPage>
                 </nav>
                 <div className="bar-container">
