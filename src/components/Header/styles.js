@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 export const Container = styled.header`
     width: 100%;
@@ -71,5 +72,20 @@ export const Container = styled.header`
                 display: none;
             }
         }
+    }
+`;
+
+export const VisitPage = styled(Link)`
+    grid-area: newnote;
+    
+    background-color: ${ ({ theme }) => theme.COLORS.ORANGE};
+    color: ${ ({ theme }) => theme.COLORS.BACKGROUND_900};
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > svg {
+        margin-right: 8px;
     }
 `;

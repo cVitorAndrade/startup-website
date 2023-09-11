@@ -1,4 +1,4 @@
-import { Container } from "./styles"
+import { Container, VisitPage } from "./styles"
 import logo from "../../assets/logo.svg"
 
 export function Header() {
@@ -10,10 +10,10 @@ export function Header() {
                     <p>Start</p>
                 </div>
                 <nav>
-                    <a href="/">Home</a>
-                    <a href="/">Portfolio</a>
-                    <a href="/">Services</a>
-                    <a href="/">Contact</a>
+                    <VisitPage to="/">Home</VisitPage>
+                    <VisitPage to="/portfolio">Portfolio</VisitPage>
+                    <VisitPage to="/">Services</VisitPage>
+                    <VisitPage to="/">Contact</VisitPage>
                 </nav>
                 <div className="bar-container">
                     <div className="bar"></div>

@@ -1,4 +1,4 @@
-import { Container, SectionMultipleImages, Section,  Welcome } from "./styles"
+import { Container, Section,  Welcome } from "./styles"
 
 import { Header } from "../../components/Header"
 import { Button } from "../../components/Button"
