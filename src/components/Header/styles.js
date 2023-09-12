@@ -11,11 +11,7 @@ export const Container = styled.header`
         justify-content: space-between;
         align-items: center;
 
-        > div:first-child {
-            
-        }
-
-        > nav {
+        .links {
             align-items: center;
             gap: 3rem;
             display: none;
@@ -39,9 +35,32 @@ export const Container = styled.header`
             transition: all .3s ease-in-out;
             margin: 5px;
         }
+
+        nav.active {
+            .links{
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                background-color: ${ ({ theme }) => theme.COLORS.GREEN_100};
+                right: 0;
+                left: 0;
+                display: flex;
+                padding-bottom: 3rem;
+            }
+        }
     }
 
+    nav.active .bar:nth-child(2) {
+        opacity: 0;
+    }
 
+    nav.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    nav.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 
 
 
@@ -49,13 +68,13 @@ export const Container = styled.header`
         .content {
             padding: 3.5rem 0;
 
-            > div:first-child {
+            > a:first-child {
                 > p {
                     font-size: 4rem;
                 }
             }
 
-            > nav {
+            .links {
                 display: flex;
             }
 

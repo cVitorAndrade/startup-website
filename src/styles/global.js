@@ -8,19 +8,7 @@ export default createGlobalStyle`
 
     :root {
         font-size: 52.5%;
-        /* font-family: 'Crimson Text', serif; */
         font-family: 'Work Sans', sans-serif;
-
-        --heading1: 4rem;
-        --heading2: 3.2rem;
-        --heading3: 2.8rem;
-        --heading4: 2.4rem;
-        --heading5: 2rem;
-        --heading6: 1.6rem;
-
-        --sub-heading: 2rem;
-
-        --fs-label: 1.6rem;
     }
     
     body {
