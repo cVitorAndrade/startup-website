@@ -5,10 +5,10 @@ export function Header() {
     return(
         <Container>
             <div className="content">
-                <div>
+                <VisitPage>
                     <img src={logo} alt="" />
                     <p>Start</p>
-                </div>
+                </VisitPage>
                 <nav>
                     <VisitPage to="/">Home</VisitPage>
                     <VisitPage to="/portfolio">Portfolio</VisitPage>

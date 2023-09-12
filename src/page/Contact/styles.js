@@ -4,6 +4,11 @@ export const Container = styled.div`
 
     form {
         width: min(100%, 57.5rem);
+
+        a {
+            width: 100%;
+            margin-top: 3rem;
+        }
     }
 
     .location {
@@ -47,10 +52,5 @@ export const Container = styled.div`
             height: 14rem;
             resize: none;
         }
-    }
-
-    a {
-        width: 100%;
-        margin-top: 3rem;
     }
 `;

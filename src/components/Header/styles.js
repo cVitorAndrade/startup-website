@@ -12,16 +12,7 @@ export const Container = styled.header`
         align-items: center;
 
         > div:first-child {
-            display: flex;
-            align-items: center;
-    
-             p {
-                color: ${ ({ theme }) => theme.COLORS.WHITE_100};
-                font-size: 3rem;
-                line-height: 125%;
-                margin-left: 1rem;
-                font-weight: 500;
-            }
+            
         }
 
         > nav {
@@ -76,16 +67,14 @@ export const Container = styled.header`
 `;
 
 export const VisitPage = styled(Link)`
-    grid-area: newnote;
-    
-    background-color: ${ ({ theme }) => theme.COLORS.ORANGE};
-    color: ${ ({ theme }) => theme.COLORS.BACKGROUND_900};
-
     display: flex;
-    justify-content: center;
     align-items: center;
-
-    > svg {
-        margin-right: 8px;
+    
+        p {
+            color: ${ ({ theme }) => theme.COLORS.WHITE_100};
+            font-size: 3rem;
+            line-height: 125%;
+            margin-left: 1rem;
+            font-weight: 500;
     }
 `;
